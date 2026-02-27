@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>WA 2026 - Pavlů David</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-myPrimaryColor: #d96d00;
+        }
+
+        @layer base {
+            h2 {
+                @apply  text-2xl text-violet-950 mt-4
+            }
+            p {
+                @apply  text-base font-serif mt-1
+            }
+            .card {
+                @apply  bg-yellow-200 p-5 rounded-4xl
+            }
+            nav li {
+                @apply flex-grow basis-full
+            }
+            nav a {
+                @apply  block bg-blue-500 text-white rounded-2xl p-2 text-center
+                        whitespace-nowrap hover:bg-blue-800 no-underline
+            }
+        }
+
+    </style>
+
 </head>
-<body>
-    <div class="page-wrapper">
-        <header>
-            <h1>WA 2026 - První web</h1>
+<body class="bg-green-800">
+    <div class="page-wrapper w-[90%] mx-auto lg:w-[80%]">
+        <header class="bg-myPrimaryColor px-2 py-4">
+            <h1 class="text-4xl">WA 2026 - První web</h1>
         </header>
-        <nav>
-            <ul>
+        <nav class="my-4">
+            <ul class="flex gap-2 list-none p-0">
                 <li><a href="index.html">Úvod</a></li>
                 <li><a href="#">O nás</a></li>
                 <li><a href="#">Kontakt</a></li>
@@ -20,7 +47,7 @@
             </ul>
         </nav>
         <main>
-            <section class="grid-container">
+            <section class="grid-container grid gap-4 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
                 <article class="card">
                     <h2>Nadpis článku 1</h2>
                     <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Voluptas voluptatibus minima illum voluptatem, odio sunt maxime unde deserunt ullam. Amet officia aspernatur ratione enim incidunt quaerat facilis praesentium, maiores fugit?</p>
@@ -59,7 +86,7 @@
 
 
 
-        <footer>
+        <footer class="bg-myPrimaryColor py-2 text-xl text-center">
             <p>&copy; WA 2026 - David Pavlů</p>
         </footer>
 
