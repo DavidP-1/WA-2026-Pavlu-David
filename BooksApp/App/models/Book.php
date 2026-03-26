@@ -6,7 +6,7 @@ class Book {
     public function __construct() {
         // Zde doplňte údaje pro připojení k vaší databázi
         $host = 'localhost';
-        $dbname = 'books_db'; // Název vaší databáze
+        $dbname = 'wa_2026_dp_02'; // Název vaší databáze
         $user = 'root';       // Přihlašovací jméno k DB
         $pass = '';           // Heslo k DB
 
