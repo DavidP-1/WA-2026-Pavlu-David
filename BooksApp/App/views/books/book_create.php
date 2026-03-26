@@ -15,7 +15,7 @@
         </div>
 
         <div>
-            <form action="" >
+            <form action="" method="POST">
                 <div>
                     <div>
                         <label for="title">Název knihy <span>*</span></label>
